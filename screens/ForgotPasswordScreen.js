@@ -26,6 +26,7 @@ export const ForgotPasswordScreen = ({ navigation }) => {
       <View style={styles.innerContainer}>
         <Text style={styles.screenTitle}>Reset your password</Text>
       </View>
+
       <Formik
         initialValues={{ email: "" }}
         validationSchema={passwordResetSchema}
@@ -64,7 +65,7 @@ export const ForgotPasswordScreen = ({ navigation }) => {
           </>
         )}
       </Formik>
-      {/* Button to navigate to Login screen */}
+
       <Button
         style={styles.borderlessButtonContainer}
         borderless
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
   },
   innercontainer: {
-    alignItems: "center",
+    alignItems: "centre",
   },
   screenTitle: {
     fontSize: 32,
